@@ -9,12 +9,18 @@ To understand why RSpec is the way it is, we need to understand the point of BDD
 Run your test suite. Repeat steps 3 and 4 until all tests pass.
 1. Go back and refactor your new code, making it as simple and clear as possible while keeping the test suite green.
 
+---
+
 # Whats wrong with our tests?
 
 One of the worst parts of writing tests or debugging failures is when reading the tests takes more effort than writing the implementation. RSpec has many tools that allow you to keep tests terse, and to the point.
 
+---
+
 # How to run tests
 Head on over to [Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards) to and set up your project with a Rakefile in which you can set up some rake tasks for unit, medium and acceptance tests.
+
+---
 
 # First Example
 ```ruby
@@ -51,12 +57,14 @@ end
 * `expect` - a DSL for defining the expected outcome of the operation.
 * `let(:some_var_name) { some_var_value }` lets are used to set up variables that you want to override over multiple test cases. A let variable is lazily evaluated i.e. it is only evaluated when the value gets used. In the example above title_name is used with two different values and the resulting db is tested.
 * `before` - a hook that allows you to run code before a test is evaluated, useful for setup of test cases.
+---
 
 # RSpec Matchers
 * Equality/Identity Matchers - `expect(a).to eql "test string"`
 * Comparison Matchers - `expect(b).to be <= b`
 * Boolean Matchers - `expect(x).to be true`
 * Error Matchers - `expect { method_call(wrong_val) }.to raise_error /extremely bad error/`
+---
 
 # RSpec Mocks
 ```ruby
@@ -83,6 +91,7 @@ describe ClassRoom do
    end
 end
 ```
+---
 
 # RSpec Tags
 * Allows you to run specific tests according to a tag you mark the describe/it block
@@ -99,6 +108,7 @@ describe "How to run specific Examples with Tags" do
   end
 end
 ```
+---
 
 # RSpec Subject
 * Shorthand for the class declared in the describe call.
@@ -118,6 +128,7 @@ describe Person.new('John', 'Smith') do
    it { is_expected.to have_attributes(last_name: 'Smith') }
 end
 ```
+---
 
 # RSpec Metadata
 * Contains information about current example_group, file_path, line number etc.
@@ -135,6 +146,7 @@ describe "An Example Group with a metadata variable", :foo => 17 do
   end
 end
 ```
+---
 
 # Some examples at Orion
 https://stash/projects/OCD/repos/capistrano-smoke_test/browse
