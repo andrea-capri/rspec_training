@@ -1,5 +1,5 @@
+---
 # RSpec
-
 A testing framework with rich DSL and fully BDD, to understand why RSpec is the way it is, we need to understand the point of BDD and its parent, TDD.
 
 1. Write the smallest possible test case that matches what we need to program.
@@ -8,7 +8,6 @@ A testing framework with rich DSL and fully BDD, to understand why RSpec is the 
 Run your test suite. Repeat steps 3 and 4 until all tests pass.
 1. Go back and refactor your new code, making it as simple and clear as possible while keeping the test suite green.
 ---
-
 # Whats wrong with our tests?
 
 One of the worst parts of writing tests or debugging failures is when reading the tests takes more effort than writing the implementation. RSpec has many tools that allow you to keep tests terse, and to the point.
