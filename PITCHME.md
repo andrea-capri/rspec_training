@@ -126,8 +126,8 @@ class Person
 end
 
 describe Person.new('John', 'Smith') do
-   it { is_expected.to have_attributes(first_name: 'John') }
-   it { is_expected.to have_attributes(last_name: 'Smith') }
+   it { is_expected.to have_attributes(first_name: 'John' ) }
+   it { is_expected.to have_attributes(last_name: 'Smith' ) }
 end
 ```
 ---
@@ -148,6 +148,10 @@ describe "An Example Group with a metadata variable", :foo => 17 do
   end
 end
 ```
+---
+### Shared Examples and contexts
+* shared_context - blocks of code for setting up test parameters
+* shared_example - test blocks that can be repeated for multiple tests
 ---
 ##### Internal links
 * A great starting point is the Ruby Standards page which has info on setting up a project for testing and following coding best practices, also some known bugs and workarounds.
