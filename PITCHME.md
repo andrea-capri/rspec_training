@@ -1,5 +1,4 @@
----
-# RSpec
+### RSpec
 A testing framework with rich DSL and fully BDD, to understand why RSpec is the way it is, we need to understand the point of BDD and its parent, TDD.
 
 1. Write the smallest possible test case that matches what we need to program.
@@ -8,18 +7,18 @@ A testing framework with rich DSL and fully BDD, to understand why RSpec is the 
 Run your test suite. Repeat steps 3 and 4 until all tests pass.
 1. Go back and refactor your new code, making it as simple and clear as possible while keeping the test suite green.
 ---
-# Whats wrong with our tests?
+### Whats wrong with our tests?
 
 One of the worst parts of writing tests or debugging failures is when reading the tests takes more effort than writing the implementation. RSpec has many tools that allow you to keep tests terse, and to the point.
 
 ---
 
-# How to run tests
+### How to run tests
 Head on over to [Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards) to and set up your project with a Rakefile in which you can set up some rake tasks for unit, medium and acceptance tests.
 
 ---
 
-# First Example
+### First Example
 ```ruby
 describe Order do
   describe "#submit" do
@@ -56,14 +55,14 @@ end
 * `before` - a hook that allows you to run code before a test is evaluated, useful for setup of test cases.
 ---
 
-# RSpec Matchers
+### RSpec Matchers
 * Equality/Identity Matchers - `expect(a).to eql "test string"`
 * Comparison Matchers - `expect(b).to be <= b`
 * Boolean Matchers - `expect(x).to be true`
 * Error Matchers - `expect { method_call(wrong_val) }.to raise_error /extremely bad error/`
 ---
 
-# RSpec Mocks
+### RSpec Mocks
 ```ruby
 class ClassRoom
    def initialize(students)
@@ -90,7 +89,7 @@ end
 ```
 ---
 
-# RSpec Tags
+### RSpec Tags
 * Allows you to run specific tests according to a tag you mark the describe/it block
 
 ```ruby
@@ -107,7 +106,7 @@ end
 ```
 ---
 
-# RSpec Subject
+### RSpec Subject
 * Shorthand for the class declared in the describe call.
 
 ```ruby
@@ -127,7 +126,7 @@ end
 ```
 ---
 
-# RSpec Metadata
+### RSpec Metadata
 * Contains information about current example_group, file_path, line number etc.
 * Also contains tag data
 ```ruby
@@ -145,7 +144,7 @@ end
 ```
 ---
 
-# Some examples at Orion
+### Some examples at Orion
 https://stash/projects/OCD/repos/capistrano-smoke_test/browse
 
 ## Resources
