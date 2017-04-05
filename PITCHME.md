@@ -1,14 +1,12 @@
 # RSpec
 
-A testing framework with rich DSL and fully BDD
-To understand why RSpec is the way it is, we need to understand the point of BDD and its parent, TDD.
+A testing framework with rich DSL and fully BDD, to understand why RSpec is the way it is, we need to understand the point of BDD and its parent, TDD.
 
 1. Write the smallest possible test case that matches what we need to program.
 1. Run the test and watch it fail. This gets you into thinking how to write only the code that makes it pass.
 1. Write some code with the goal of making the test pass.
 Run your test suite. Repeat steps 3 and 4 until all tests pass.
 1. Go back and refactor your new code, making it as simple and clear as possible while keeping the test suite green.
-
 ---
 
 # Whats wrong with our tests?
@@ -20,7 +18,7 @@ One of the worst parts of writing tests or debugging failures is when reading th
 # How to run tests
 Head on over to [Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards) to and set up your project with a Rakefile in which you can set up some rake tasks for unit, medium and acceptance tests.
 
-+++
+---
 
 # First Example
 ```ruby
