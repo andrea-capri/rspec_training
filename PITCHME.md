@@ -147,9 +147,9 @@ end
 
 #### Resources
 ##### Internal links
-A great starting point is the Ruby Standards page which has info on setting up a project for testing and following coding best practices, also some known bugs and workarounds.
-[Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards)
-https://stash/projects/OCD/repos/capistrano-smoke_test/browse
+* A great starting point is the Ruby Standards page which has info on setting up a project for testing and following coding best practices, also some known bugs and workarounds.
+* [Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards)
+* https://stash/projects/OCD/repos/capistrano-smoke_test/browse
 
 ##### External Links
 * [Official docs for RSpec](https://www.relishapp.com/rspec)
