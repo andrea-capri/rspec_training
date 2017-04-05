@@ -62,7 +62,8 @@ end
 * Equality/Identity Matchers - `expect(a).to eql "test string"`
 * Comparison Matchers - `expect(b).to be <= b`
 * Boolean Matchers - `expect(x).to be true`
-* Error Matchers - `expect { method_call(wrong_val) }.to raise_error /extremely bad error/`
+* Error Matchers -
+  ```expect { code_block }.to raise_error /extremely bad error/```
 ---
 
 ### RSpec Mocks
