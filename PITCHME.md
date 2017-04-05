@@ -48,8 +48,8 @@ describe Order do
     end
   end
 end
-* Very legible, filled with an extensive DSL with many third party libraries to extend functionality.
 ```
+* Very legible, filled with an extensive DSL with many third party libraries to extend functionality.
 ---
 * `describe` - a way of declaring collections of tests, with the title being output on the console when tests are run.
 * `it` - a single test case, normally setup for this test is wrapped up in the surrounding descibe block and the it block only tests the outcomes of the operation.
