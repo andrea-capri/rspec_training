@@ -1,6 +1,8 @@
 ### RSpec
 A testing framework with rich DSL and fully BDD, to understand why RSpec is the way it is, we need to understand the point of BDD and its parent, TDD.
 
+---
+### Testing workflow in BDD
 1. Write the smallest possible test case that matches what we need to program.
 1. Run the test and watch it fail. This gets you into thinking how to write only the code that makes it pass.
 1. Write some code with the goal of making the test pass.
@@ -148,6 +150,7 @@ end
 * A great starting point is the Ruby Standards page which has info on setting up a project for testing and following coding best practices, also some known bugs and workarounds.
 * [Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards)
 * [capistrano-smoke_test](https://stash/projects/OCD/repos/capistrano-smoke_test/browse)
+---
 ##### External Links
 * [Official docs for RSpec](https://www.relishapp.com/rspec)
 * [rspec.info](http://rspec.info/)
