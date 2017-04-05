@@ -51,11 +51,13 @@ end
 ```
 * Very legible, filled with an extensive DSL with many third party libraries to extend functionality.
 ---
-* `describe` - a way of declaring collections of tests, with the title being output on the console when tests are run.
-* `it` - a single test case
-* `expect` - a DSL for defining the expected outcome of the operation.
-* `let(:some_var_name) { some_var_value }` lets are used to set up variables that you want to override over multiple test cases. A let variable is lazily evaluated.
-* `before` - a hook that allows you to run code before a test is evaluated, useful for setup of test cases.
+Keyword | Meaning
+--------|---------------------------
+* `describe` | a way of declaring collections of tests, with the title being output on the console when tests are run.
+* `it`       | a single test case
+* `expect`   | a DSL for defining the expected outcome of the operation.
+* `let(:some_var_name) {}` | lets are used to set up variables that you want to override over multiple test cases. A let variable is lazily evaluated.
+* `before` | a hook that allows you to run code before a test is evaluated, useful for setup of test cases.
 ---
 
 ### RSpec Matchers
