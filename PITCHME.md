@@ -63,7 +63,9 @@ end
 * Comparison Matchers - `expect(b).to be <= b`
 * Boolean Matchers - `expect(x).to be true`
 * Error Matchers -
-  ```expect { code_block }.to raise_error /extremely bad error/```
+  ```ruby
+  expect { code_block }.to raise_error /extremely bad error/
+  ```
 ---
 
 ### RSpec Mocks
