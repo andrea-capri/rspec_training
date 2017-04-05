@@ -144,8 +144,6 @@ describe "An Example Group with a metadata variable", :foo => 17 do
 end
 ```
 ---
-
-#### Resources
 ##### Internal links
 * A great starting point is the Ruby Standards page which has info on setting up a project for testing and following coding best practices, also some known bugs and workarounds.
 * [Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards)
