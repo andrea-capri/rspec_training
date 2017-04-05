@@ -20,7 +20,7 @@ One of the worst parts of writing tests or debugging failures is when reading th
 # How to run tests
 Head on over to [Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards) to and set up your project with a Rakefile in which you can set up some rake tasks for unit, medium and acceptance tests.
 
----
++++
 
 # First Example
 ```ruby
