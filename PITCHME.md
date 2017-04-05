@@ -47,6 +47,7 @@ describe Order do
   end
 end
 ```
+---
 * Very legible, filled with an extensive DSL with many third party libraries to extend functionality.
 * `describe` - a way of declaring collections of tests, with the title being output on the console when tests are run.
 * `it` - a single test case, normally setup for this test is wrapped up in the surrounding descibe block and the it block only tests the outcomes of the operation.
@@ -133,26 +134,24 @@ end
 describe "An Example Group with a metadata variable", :foo => 17 do
   context 'and a context with another variable', :bar => 12 do
     it 'can access the metadata variable of the outer Example Group' do |example|
-       expect(example.metadata[:foo]).to eq(17)
+      expect(example.metadata[:foo]).to eq(17)
     end
 
     it 'can access the metadata variable in the context block' do |example|
-       expect(example.metadata[:bar]).to eq(12)
+      expect(example.metadata[:bar]).to eq(12)
     end
   end
 end
 ```
 ---
 
-### Some examples at Orion
-https://stash/projects/OCD/repos/capistrano-smoke_test/browse
-
-## Resources
-# Internal links
+#### Resources
+##### Internal links
 A great starting point is the Ruby Standards page which has info on setting up a project for testing and following coding best practices, also some known bugs and workarounds.
 [Ruby Coding Standards](http://woki/display/devstds/Ruby+Coding+Standards)
+https://stash/projects/OCD/repos/capistrano-smoke_test/browse
 
-# External Links
+##### External Links
 * [Official docs for RSpec](https://www.relishapp.com/rspec)
 * [rspec.info](http://rspec.info/)
 * [betterspecs.org](http://betterspecs.org/)
